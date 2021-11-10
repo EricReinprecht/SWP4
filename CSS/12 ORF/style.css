@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    --width-content: 62.2%;
+    font-family: "ORF ON",Arial,Helvetica,Lucida Sans Unicode,Lucida Grande,sans-serif;
+    font-feature-settings: "liga", "kern";
+}
+
+a{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+
+.main{
+    width: 91.5%;
+    height: 100%;
+    background-color: lightgray;
+    padding-left: 8.5%;
+}
+
+.header1{
+    display: flex;
+    flex-direction: row;
+    background-color: #790000;
+    color: white;
+    width: var(--width-content);
+    height: 27px;
+}
+
+.overwatch{
+    padding-top: 4px;
+    position: relative;
+}
+
+.header2{
+    background-color: #BB131A;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: var(--width-content);
+}
+
+.header2 .logotext{
+    display: flex;
+    font-size: 2em;
+    height: 3em;
+    align-items: center;
+    padding-left: 0.7em;
+}
+
+.header3{
+    background-color: #790000;
+    color: white;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: var(--width-content);
+}
+
+.bell{
+
+    position: relative;
+    left: 50px;
+    margin-top: 10px;
+}
+
+#bell{
+    height: 1.8em;
+    width: 2.0em;
+}
+
+.backgroundpic{
+    width: var(--width-content);
+    height: 350px;
+}
+
+#backgroundpic{
+    height: 100%;
+    width: 100%;
+}
+
+.content1{
+    background-color: white;
+    width: var(--width-content);
+
+}
+
+.content{
+    background-color: white;
+    margin-left: 14%;
+    margin-right: 15%;
+    width: 70%;
+    height: 500em;
+    position: relative;
+    top: -100px;
+    border: solid;
+    border-color: lightgray;
+    border-width: 0.0001px;
+    border-bottom: none;
+}
+
+.subheadline{
+    color: grey;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
+.mainheadline{
+    font-size: 1.5rem;
+    font: bold;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.7rem;
+    font-family: Arial black;
+}
+
+.text{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type:none;
+    justify-content: space-between;
+}
+
+li{
+    padding-right: 27px;
+    padding-top: 4px;
+}
+
+@media (max-width: 96.0em){
+
+}

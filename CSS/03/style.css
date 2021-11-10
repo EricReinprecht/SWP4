@@ -1,0 +1,24 @@
+div{
+    border-style: solid;
+    height: 100px;
+}
+
+.div1{
+    background-color: darkseagreen;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.div2{
+    background-color: rebeccapurple;
+    position: fixed; /*sticky*/
+    width: 700px;
+}
+
+.div3{
+    background-color: orangered;
+    position: absolute;
+    left: 40px;
+    top: 50px;
+}

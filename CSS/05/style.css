@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+
+div{
+    border-style: solid;
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+
+}
+
+.div2{
+    padding: 15px;
+}

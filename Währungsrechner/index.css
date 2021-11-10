@@ -1,0 +1,10 @@
+.input{
+    display: flex;
+}
+
+.numberOutput{
+    height: 1.3em;
+    width: 10.55em;
+    border: 1px solid gray;
+}
+

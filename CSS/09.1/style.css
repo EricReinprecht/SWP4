@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+}
+
+div{
+    height: 50px;
+    background-color: chartreuse;
+}
+
+.container1{
+    width: 50%;
+}
+
+.container2{
+    width: 50vw;
+    height: 100vh;
+}
+
+.main{
+    background-color: coral;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+}

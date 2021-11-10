@@ -1,0 +1,21 @@
+div{
+    background-color: bisque;
+    font-size: 40px;
+}
+
+.text{
+    color: chocolate;
+    font-size: 30px;
+}
+
+#second{
+    background-color: darkblue;
+}
+
+#first{
+    background-color: darkgray;
+}
+
+div p{
+    color: darkred;
+}
