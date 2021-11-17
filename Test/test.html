@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function create_element(id){
+				var container = document.getElementById('tasks');
+				var newdiv = document.createElement('div');
+				newdiv.setAttribute('id',id);
+				newdiv.innerHTML = id;
+				container.appendChild(newdiv);
+			}
+			function delete_element(id){
+				var container = document.getElementById('container');
+				var div = document.getElementById(id);
+				container.removeChild(div);
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="create_element('a');">Add</button onclick="delete_element('a');"><button>Remove</button>
+		<div id="container">hallo</div>
+    
+	</body>
+</html>
