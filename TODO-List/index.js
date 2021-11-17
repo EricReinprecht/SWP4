@@ -10,9 +10,7 @@ function addTask(){
     person = document.getElementById("person").value;
     createDiv();
     divNumber++;
-
 }
-
 
   function createDiv(){
     var container = document.getElementById('tasks');
@@ -21,17 +19,13 @@ function addTask(){
     newDiv.setAttribute('id',divNumber);
     tasks.push(newDiv);
     container.appendChild(newDiv);
-
 }
 
   function finishTask(){
-    
     divNumberInput = document.getElementById("taskNumber").value;
     var node = document.getElementById(divNumberInput);
     if (node.parentNode) {
         node.parentNode.removeChild(node);
     }
-
-    
 }
   
