@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,22 +10,22 @@
     <script type="text/javascript" src="index.js"></script>
     <title>Document</title>
 </head>
-    <body>
-            <div class="headline">TODO</div>
-            <div class="tasks" id="tasks">
-                <output type="String" id="taskOutput">
-            </div>
-            <div class="input">
-                <input type="String" class="input" id="task" placeholder="task">
-                <input type="String" class="input" id="person" placeholder="name">
-            </div>
-            <div class="add">
-                <button onclick="addTask()">Hinzufügen</button>
-            </div>
-            <div class="add">
-                <input type="String" class="input" id="taskNumber" value="">
-                <button onclick="finishTask()">Abhacken</button>
-                <button onclick="openTaskAgain()">Rückgängig</button>
-            </div>
-    </body>
+
+<body>
+    <div class="headline">TODO</div>
+    <div class="taskDisplay" id="taskDisplay">
+        <output type="String" id="taskOutput">
+    </div>
+    <div class="interface">
+        <div class="input">
+            <input type="String" class="input" id="task" placeholder="task">
+            <input type="String" class="input" id="person" placeholder="name">
+        </div>
+        <div class="add">
+            <button onclick="addTask()" class="button">Hinzufügen</button>
+        </div>
+    </div>
+
+</body>
+
 </html>

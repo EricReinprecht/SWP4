@@ -20,3 +20,43 @@ body{
     flex-direction: column;
     margin: 5px;
 }
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.inteface{
+    position: sticky;
+}
+
+.taskDisplay{
+    width: 300px;
+    height: 400px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    border: 1px solid gray;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.tasks{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    margin-top: 5px;
+    width: 180px;
+    height: 40px;
+    color: brown;
+    font-size: 20px;
+}

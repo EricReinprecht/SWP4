@@ -2,69 +2,81 @@ var task;
 var person;
 var correctInput;
 var divNumber = 1;
-var number = 1;
+var idNumber = 1;
 
 var divNumberInput;
 var tasksDiv = [];
 var tasks = [];
+var crossedOutTasks = [];
+var crossedOut = "";
 
 
 
-function addTask(){
+function addTask() {
   getInputOfTask();
   checkInputOfTask();
-  createDiv();
-  console.log(tasksDiv);
+  if (correctInput) {
+    createDiv();
+  }
 }
 
-function getInputOfTask(){
+function getInputOfTask() {
   task = document.getElementById("task").value;
   person = document.getElementById("person").value;
 }
 
-function checkInputOfTask(){
-  if(person!=""){
+function checkInputOfTask() {
+  if (person != "") {
     person = "-" + person;
-  }else{
+  } else {
     person = "";
   }
-  if(task != ""){
+  if (task != "") {
     correctInput = true;
-  }else{
+  } else {
     correctInput = false;
   }
 }
 
-function createDiv(){
-  if(correctInput){
-    var container = document.getElementById('tasks');
+function createDiv() {
+    var container = document.getElementById('taskDisplay');
     var newDiv = document.createElement('div');
     newDiv.innerHTML = divNumber + ". " + task + person;
-    addDivId(newDiv);
+    addDivAttribute(newDiv);
     addToArray(newDiv);
     container.appendChild(newDiv);
     divNumber++;
-    number++;
+    idNumber++;
+}
+
+function addDivAttribute(newDiv) {
+  newDiv.setAttribute('id', divNumber);
+  newDiv.setAttribute('class', "tasks");
+  newDiv.setAttribute('onclick', "alterDivContentOnclick(id)");
+}
+
+function addToArray() {
+  tasks.push(idNumber + ". " + task + person);
+  tasksDiv.push(idNumber);
+  crossedOutTasks.push(false);
+}
+
+function alterDivContentOnclick(idOfDiv) {
+  checkIfCrossedOut(idOfDiv);
+  alterDivContent(idOfDiv);
+}
+
+function checkIfCrossedOut(idOfDiv){
+  if (!crossedOutTasks[idOfDiv - 1]) {
+    crossedOut = "<s>";
+    crossedOutTasks[idOfDiv - 1] = true;
+  } else {
+    crossedOut = "";
+    crossedOutTasks[idOfDiv - 1] = false;
   }
 }
 
-function addDivId(newDiv){
-  newDiv.setAttribute('id',divNumber);
-}
-
-function addToArray(){
-  tasks.push(number + ". " + task + person);
-  tasksDiv.push(number);
-}
-
-function finishTask(){
-  divNumberInput = document.getElementById("taskNumber").value;
-  var node = document.getElementById(divNumberInput);
-  node.innerHTML = "<s>" + tasks[divNumberInput -1] + "</s>";
-}
-
-function openTaskAgain(){
-  divNumberInput = document.getElementById("taskNumber").value;
-  var node = document.getElementById(divNumberInput);
-  node.innerHTML = tasks[divNumberInput -1];
+function alterDivContent(idOfDiv){
+  var node = document.getElementById(idOfDiv);
+  node.innerHTML = crossedOut + tasks[idOfDiv - 1];
 }
