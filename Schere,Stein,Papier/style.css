@@ -1,0 +1,27 @@
+.headline{
+    height: 70px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.interface{
+    margin: 100px;
+    margin-bottom: 0px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image{
+    height: 300px;
+    width: 300px;
+}
+
+img{
+    height: 200px;
+}

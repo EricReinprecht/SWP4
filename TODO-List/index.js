@@ -1,13 +1,16 @@
 var task;
 var person;
+
 var correctInput;
+
 var divNumber = 1;
 var idNumber = 1;
 
-var divNumberInput;
+
 var tasksDiv = [];
 var tasks = [];
 var crossedOutTasks = [];
+
 var crossedOut = "";
 
 
