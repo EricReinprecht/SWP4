@@ -25,3 +25,12 @@ h1{
 img{
     height: 200px;
 }
+
+#endScreen{
+    width: 2160px;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    
+}
