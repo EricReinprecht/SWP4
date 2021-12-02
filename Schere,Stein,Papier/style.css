@@ -27,10 +27,39 @@ img{
 }
 
 #endScreen{
-    width: 2160px;
+    width: 1536px;
     background-color: orange;
     position: absolute;
     top: 0;
     bottom: 0;
     
+}
+
+#endScreen{
+    display: flex;
+}
+
+#result{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    font: 2em arial bold;
+    
+}
+
+#playerChoise{
+    position: absolute;
+    left: var(--distanceFromSideAtResult);
+    top: var(--distanceFromTopAtResult);
+}
+
+#comChoise{
+    position: absolute;
+    right: var(--distanceFromSideAtResult);
+    top: var(--distanceFromTopAtResult);
+}
+
+#main{
+    --distanceFromSideAtResult: 20%;
+    --distanceFromTopAtResult: 40%;
 }

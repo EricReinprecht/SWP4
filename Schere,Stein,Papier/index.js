@@ -49,30 +49,34 @@ function createContentOfEndScreen() {
 
 function createContent() {
     createResult();
-    createPlayerComChoise();
+    createPlayerComChoise(playersChoise, comChoise);
     createRestartButton();
 }
 
 function createRestartButton() {
     var div = document.getElementById('restartButton');
-    div.innerHTML = winner;
 }
 
-function createPlayerComChoise() {
-    var selector = playersChoise;
-    var div = document.getElementById();
-
-    switch (selector) {
-        case 1:
-            div.innerHTML = "<img src=rock.PNG>";
-            break;
-        case 2:
-            div.innerHTML = "<img src=scissors.PNG>";
-            break;
-        case 3:
-            div.innerHTML = "<img src=paper.PNG>";
-            break;
+function createPlayerComChoise(selectorPlayer, selectorCom) {
+    var image = selectorPlayer;
+    var div = document.getElementById('playerChoise');
+    for (var i = 1; i <= 2; i++) {
+        switch (image) {
+            case 1:
+                div.innerHTML = "<img src=rock.PNG>";
+                break;
+            case 2:
+                div.innerHTML = "<img src=scissors.PNG>";
+                break;
+            case 3:
+                div.innerHTML = "<img src=paper.PNG>";
+                break;
+        }
+        var div = document.getElementById('comChoise');
+        image = selectorCom;
     }
+
+
 }
 
 function createResult() {
