@@ -1,7 +1,18 @@
 .main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+}
+
+
+.sidebar{
+    height: 721px;
+    width: 617px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .headline{
@@ -21,12 +32,8 @@ body{
     margin: 5px;
 }
 
-.buttons{
-    display: flex;
-    justify-content: center;
-}
 
-.inteface{
+.interface{
     position: sticky;
 }
 
@@ -60,3 +67,4 @@ body{
     color: brown;
     font-size: 20px;
 }
+

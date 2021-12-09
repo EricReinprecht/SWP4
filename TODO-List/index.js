@@ -83,3 +83,24 @@ function alterDivContent(idOfDiv){
   var node = document.getElementById(idOfDiv);
   node.innerHTML = crossedOut + tasks[idOfDiv - 1];
 }
+
+function registerEvents(){
+  document.getElementById("loadData").addEventListener("click", function(){
+    loadData();
+  })
+}
+
+registerEvents();
+
+function loadData(){
+  fetch('https://jasonplaceholder.typecode.com/todos')
+  .then(function(respose){
+    return respose.json();
+  })
+  .then(function(data){
+    appendData(data);
+  })
+  .catch(function(err){
+    console.log(err);
+  });
+}

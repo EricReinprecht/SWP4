@@ -12,20 +12,28 @@
 </head>
 
 <body>
-    <div class="headline">TODO</div>
-    <div class="taskDisplay" id="taskDisplay">
-        <output type="String" id="taskOutput">
-    </div>
-    <div class="interface">
-        <div class="input">
-            <input type="String" class="input" id="task" placeholder="task">
-            <input type="String" class="input" id="person" placeholder="name">
+    <div class="main">
+        <div class="sidebar"></div>
+        <div class="content">
+            <div class="headline">TODO</div>
+            <div class="taskDisplay" id="taskDisplay">
+                <output type="String" id="taskOutput">
+            </div>
+            <div class="interface">
+                <div class="input">
+                    <input type="String" class="input" id="task" placeholder="task">
+                    <input type="String" class="input" id="person" placeholder="name">
+                </div>
+                <div class="add">
+                    <button onclick="addTask()" class="button">Hinzufügen</button>
+                </div>
+            </div>
         </div>
-        <div class="add">
-            <button onclick="addTask()" class="button">Hinzufügen</button>
+        <div class="sidebar">
+            <div class="getData">
+                <button onclick="registerEvents()" id="loadData">Load Data</button>
+            </div>
         </div>
     </div>
-
 </body>
-
 </html>

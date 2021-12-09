@@ -130,4 +130,3 @@ function setPlayersChoise(playersChoise) {
 }
 
 function restartGame() { }
-
