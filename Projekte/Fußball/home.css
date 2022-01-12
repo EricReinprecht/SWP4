@@ -1,0 +1,10 @@
+#teamPic{
+    height: 50%;
+    width: 50%;
+}
+
+.picture{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}

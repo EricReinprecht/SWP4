@@ -1,0 +1,25 @@
+.playerInterface{
+    background-color: hotpink;
+    height: 511px;
+    width: 700px;
+    margin-left: 400px;
+    margin-right: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.changePlayer{
+    height: 80px;
+    width: 80px;
+    background-color: grey;
+}
+
+#changePlayerLeft{
+    position: absolute;
+    left: 520px;
+}
+
+#changePlayerRight{
+    position: absolute;
+    left: 900px;
+}

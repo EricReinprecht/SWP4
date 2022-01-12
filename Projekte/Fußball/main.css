@@ -1,0 +1,35 @@
+.head{
+    height: 210px;
+    background-color: #0077b6;
+}
+
+.headbar{
+    height: 190px;
+    background-color: #023e8a;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.main{
+    height: 721px;
+    background-color: #ade8f4;
+}
+
+a{
+    color: #48cae4;
+    text-decoration: none;
+}
+
+ul{
+    display: flex; 
+    justify-content: left;
+    padding: 10px;
+}
+
+li{
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+
