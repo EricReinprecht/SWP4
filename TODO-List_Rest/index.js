@@ -1,16 +1,15 @@
 function registerEvents(){
   document.getElementById("loadTodos").addEventListener("click", function(){
-    loadData();
+    loadTodos();
+    console.log("Hello")
   })
   document.getElementById("loadUsers").addEventListener("click", function(){
-    loadData();
+    loadUsers();
   })
 }
 
-registerEvents();
-
 function loadTodos(){
-  fetch('https://jasonplaceholder.typecode.com/todos')
+  fetch('https://jsonplaceholder.typicode.com/todos')
   .then(function(respose){
     return respose.json();
   })
@@ -26,3 +25,22 @@ function loadTodos(){
     console.log(err);
   });
 }
+
+function loadUsers(){
+  fetch('https://jsonplaceholder.typicode.com/users')
+  .then(function(respose){
+    return respose.json();
+  })
+  .then(function(data){
+    let html = "";
+    data.forEach(todo => {
+      html += "<li>" + todo.title + "</li>"
+      
+    });
+    document.getElementById("list").innerHTML = html;
+  })
+  .catch(function(err){
+    console.log(err);
+  });
+}
+registerEvents();
