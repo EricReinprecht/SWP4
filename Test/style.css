@@ -1,0 +1,62 @@
+.main{
+    background-color: grey;
+    height: 721px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface{
+    background-color: greenyellow;
+    width: 30%;
+    height: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.output{
+    background-color: honeydew;
+    height: 80%;
+    width: 40%;
+    margin-left: 15px;
+}
+
+.input{
+    height: 80%;
+    width: 40%;
+    margin-right: 15px;
+}
+
+.userInput{
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.size{
+    background-color: honeydew;
+    margin-bottom: 5px;
+    height: 40%;
+}
+
+.weight{
+    background-color: honeydew;
+    margin-top: 5px;
+    height: 40%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50%;
+}
+
+.button{
+    background-color: brown;
+    color: white;
+    height: 40%;
+    width: 100%;
+    
+}
