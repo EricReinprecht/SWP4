@@ -1,25 +1,61 @@
-.playerInterface{
-    background-color: hotpink;
-    height: 511px;
-    width: 700px;
-    margin-left: 400px;
-    margin-right: 500px;
-    display: flex;
-    align-items: center;
+.main {
+    height: 721px;
+    background-color: #ade8f4;
 }
 
-.changePlayer{
+.interface {
+    height: 511px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.playerInterface {
+    background-color: hotpink;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.changePlayer {
     height: 80px;
     width: 80px;
     background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#changePlayerLeft{
-    position: absolute;
-    left: 520px;
+.player {
+    height: 370px;
+    width: 300px;
 }
 
-#changePlayerRight{
-    position: absolute;
-    left: 900px;
+.playerPic {
+    height: 85%;
+    width: 100%;
+}
+
+.stats {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.changeStats {
+    height: 100%;
+    width: 30%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    height: 100%;
+    width: 60%;
+    background-color: lightslategrey;
 }
