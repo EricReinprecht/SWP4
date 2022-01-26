@@ -1,0 +1,14 @@
+{
+    "players": {
+        "player1": {
+            "name": "Messi",
+            "goals": "1000",
+            "speed": "38km/h"
+        },
+        "player2": {
+            "name": "Haaland",
+            "goals": "182",
+            "speed": "35km/h"
+        }
+    }
+}
