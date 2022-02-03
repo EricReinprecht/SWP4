@@ -6,12 +6,30 @@
     align-items: center;
 }
 
-.table {
-    background-color: #C4C4C4;
-    width: 40%;
+.tableBackgroud {
+    background-color: lightgrey;
+    width: 30%;
     height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+}
+
+.table {
+    height: 70%;
+    width: 40%;
+    background-color: #C4C4C4;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.points {
+    margin-left: 20px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
