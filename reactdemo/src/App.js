@@ -1,16 +1,13 @@
 import './App.css';
-import ButtonRow from './components/ButtonRow';
-import SuperButton from './components/SuperButton';
+import List from './components/List';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <SuperButton/>
-      <ButtonRow/>
-      <ButtonRow/>
-      <ButtonRow/>
-      <ButtonRow/>
+      <List/>
+      <Button/>
+      
     </div>
   );
 }

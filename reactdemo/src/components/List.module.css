@@ -1,0 +1,11 @@
+.main{
+    width: 25%;
+    height: 20%;
+}
+
+.content{
+    border: 1px black solid;
+    height: 32%;
+    margin: 2px;
+    background-color: aqua;
+}
