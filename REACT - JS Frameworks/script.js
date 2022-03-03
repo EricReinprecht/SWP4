@@ -1,5 +1,4 @@
-console.log("hello");
+var sizeOf = require('image-size');
 
-for (i = 0; i <= 10; i++) {
-    console.log(i);
-}
+var dimensions = sizeOf('C:\\Users\\reinp\\Pictures\\gatrmel.jpg')
+console.log(dimensions.width, dimensions.height)
