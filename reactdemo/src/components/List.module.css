@@ -1,4 +1,12 @@
-.main{
+.html, body{
+    font-family: sans-serif;
+    height: 100%;
+}
+
+.contentMain{
+    position: absolute;
+    left: 40px;
+    top: 40px;
     width: 25%;
     height: 20%;
 }

@@ -5,12 +5,15 @@ export default class Card extends Component{
     render(){
         return( <div className={styles.main}>
             <div idName={styles.profilePic}>
-                <img src = "./public/johnDoe.png"></img>
+                <img src = "./johnDoe.png"></img>
             </div>
-            
             <div className={styles.content}>
-                <div idName={styles.name}>John Doe</div>
-                <div idName={styles.job}>Architect and Engineer</div>
+                <div className={styles.name}>
+                   <p>John Doe</p>
+                </div>
+                <div className={styles.job}>
+                   <p>Architect and Engineer</p>
+                </div>
             </div>
         </div>)
     }
