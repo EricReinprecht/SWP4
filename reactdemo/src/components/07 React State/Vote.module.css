@@ -1,0 +1,8 @@
+.main{
+    border: 1px black solid;
+    background-color: blanchedalmond;
+    cursor: pointer;
+    margin: 5px;
+    width: 160px;
+    height: 160px;
+}

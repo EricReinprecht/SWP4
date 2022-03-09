@@ -1,12 +1,14 @@
 import './App.css';
-import Vote from './components/06 React Properties/Vote';
+import Vote from './components/07 React State/Vote';
 
 function App() {
   return (
-    <div className="App">
-      <Vote candidate="Hans" votes="3"/>
-      <Vote candidate="Xafer" votes="7"/>
-      <Vote candidate="Jodok" votes="13"/>
+    <div className="app">
+      <div className="candidates">
+        <Vote candidate="Hans" address="Doren"/>
+        <Vote candidate="Xafer" address="Krumbach"/>
+        <Vote candidate="Jodok" address="Hittisau"/>
+      </div>
     </div>
   );
 }
