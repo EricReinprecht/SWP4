@@ -1,15 +1,12 @@
 import './App.css';
-import List from './components/05 Aufgabe Komponenten/List';
-import Button from './components/05 Aufgabe Komponenten/Button';
-import Card from './components/05 Aufgabe Komponenten/Card';
+import Vote from './components/06 React Properties/Vote';
 
 function App() {
   return (
     <div className="App">
-      <List/>
-      <Button/>
-      <Card/>
-      
+      <Vote candidate="Hans" votes="3"/>
+      <Vote candidate="Xafer" votes="7"/>
+      <Vote candidate="Jodok" votes="13"/>
     </div>
   );
 }
