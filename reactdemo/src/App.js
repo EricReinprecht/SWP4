@@ -1,14 +1,22 @@
+import { useCallback, useState } from 'react';
 import './App.css';
-import Vote from './components/07 React State/Vote';
+import Counter from './components/08 Funktionale Komponenten/Counter';
+import CounterFunction from './components/08 Funktionale Komponenten/CounterFunction';
 
 function App() {
   return (
     <div className="app">
-      <div className="candidates">
-        <Vote candidate="Hans" address="Doren"/>
-        <Vote candidate="Xafer" address="Krumbach"/>
-        <Vote candidate="Jodok" address="Hittisau"/>
+      <div className='main'>
+        <div className='counter'>
+          <Counter/>
+        </div>
+        <div className='counterFunc'>
+          <CounterFunction/>
+        </div>
+         
+        
       </div>
+        
     </div>
   );
 }

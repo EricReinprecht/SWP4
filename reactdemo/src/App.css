@@ -15,6 +15,18 @@ html, body{
   align-items: center;
 }
 
+.counterFunc{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.counter{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
 .candidates{
   height: 100%;
   width: 50%;
