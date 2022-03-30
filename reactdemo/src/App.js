@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useDebugValue, useState } from 'react';
 import { Component } from 'react';
 import './App.css';
 import Header from './components/09 React Todo-List/Header';
@@ -24,13 +24,27 @@ export default class Todo extends Component{
     }
   }
 
+  addTask = (value)=>{
+    let todo = {
+      id: 1,
+      name: value,
+      done: false
+    }
+
+    let todos = this.state.todos;
+    todos.push(todo);
+
+    this.setState({
+      todos: todos
+    })
+}
 
   render(){
     return (
       <div className="app">
         <div className='main'>
           <Header/>
-          <TaskAdder/>
+          <TaskAdder onTaskAdded={this.addTask}/>
           <TodoList todos ={this.state.todos}/>
         </div>
       </div>
